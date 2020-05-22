@@ -98,8 +98,8 @@ artist = Artist(
   num_upcoming_shows=0)
 
 show = Show(
-  venue_id=venue.id,  
-  artist_id=artist.id,
+  venue_id=1,  
+  artist_id=1,
   start_time="2019-05-21T21:30:00.000Z")
 
 def clear_data(session):

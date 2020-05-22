@@ -9,14 +9,12 @@ from logging import Formatter, FileHandler
 from flask_wtf import Form
 from forms import *
 from models import *
-from flask_migrate import Migrate
 import sys
 
 app = Flask(__name__)
 moment = Moment(app)
 app.config.from_object('config')
 db = SQLAlchemy(app)
-migrate = Migrate(app, db)
 
 def format_datetime(value, format='medium'):
   date = dateutil.parser.parse(value)
